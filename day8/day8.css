@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(120deg, #3ca7ee, #9b408f);
+}
+.modal {
+  margin: auto;
+  width: 400px;
+  height: 580px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.modal-header {
+  padding-top: 20px;
+  margin: 0 40px;
+}
+.modal-header__title {
+  text-align: center;
+}
+.modal-body {
+  margin: 40px 20px 20px 20px;
+}
+.modal-body .input-box {
+  width: 100%;
+  height: 100%;
+
+  margin-bottom: 40px;
+  position: relative;
+}
+.modal-body .input-box span {
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #08609a;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.input-box input:focus ~ span {
+  opacity: 1;
+  width: 100%;
+}
+.modal-body input {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  position: relative;
+  border-bottom: solid 2px #ccc;
+}
+.input-box small {
+  display: block;
+  width: 100%;
+  height: 10px !important;
+}
+.input-box.error small {
+  width: 100%;
+  height: 10px;
+  color: red;
+}
+.input-box.error input {
+  border-bottom: solid 2px red;
+}
+.input-box.success input {
+  border-bottom: solid 2px #08609a;
+}
+.input-box.success small {
+  width: 100%;
+  height: 10px;
+  color: #08609a;
+}
+.login-btn {
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: #2691d9;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+.login-btn:hover {
+  background-color: #08609a;
+}
+.modal-para {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.modal-para .para a {
+  text-decoration: none;
+  color: #2691d9;
+}

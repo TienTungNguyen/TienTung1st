@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background:linear-gradient(45deg, #00853e, #50c878);
+}
+.container{
+
+    width: 1020px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.catalog{
+    width: 300px;
+    height: 400px;
+    margin-top: 160px;
+    background-color: #242628;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.catalog-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid rgb(234 113 105);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 25px auto; transition: 0.5s;
+}
+.catalog-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+  
+}
+.catalog-title{
+    text-align: center;
+}
+.catalog-title .catalog-title-name{
+    font-size: 24px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color:#fff;
+}
+.catalog-title .catatlog-title-job{
+    font-size: 16px;
+    color:#F2726A;
+    padding-bottom: 30px;
+}
+.catalog-logo{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color:#fff;
+    margin-bottom: 45px;
+}
+.button{
+   display: flex;
+   justify-content: center;
+}
+.button .contact{
+    padding: 10px 20px;
+    background-color: #242628;
+    border-radius: 5px;
+    border: 1px solid #F2726A;
+    font-size: 14px;
+    color:#fff;
+}
+/* phan hover */
+.catalog-img:hover{
+    margin-top: 0;
+    border-radius: 0;
+    border: none;
+    width: 300px;
+    height: 400px;
+   
+}
+.catalog-img:hover > img{
+    
+}
+.catalog-logo i:hover{
+    cursor: pointer;
+    color:#F2726A;
+}
+.contact:hover{
+    background-color: #F2726A;
+    transition: 0.5s;
+    cursor: pointer;
+}

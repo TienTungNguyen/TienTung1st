@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:  linear-gradient( 45deg , rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.click{
+    padding: 20px 40px;
+    border-radius: 6px;
+    border:none;
+    font-size: 24px;
+}
+.click:hover{
+    cursor: pointer;
+    background-color: #E26E70;
+    color:#fff;
+}
+.overlay{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.1);
+    display: none;
+}
+.modal{
+    width: 450px;
+    height: 200px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    animation: showModal 0.7s linear;
+}
+.modal-header{
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+    background-color: rgb(226 134 137);
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-header .modal-time{
+    width: 50px;
+    font-size: 24px;
+    height: 100%;
+    display: flex;
+}
+.modal-header .modal-time i{
+    line-height: 50px;
+    transform: translateX(20px);
+}
+.modal-body{
+    background-color: #fff;
+    padding: 15px 10px;
+}
+.modal-body .modal-heading{
+    color:rgb(226 134 137);
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+.modal-body .slogan{
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.modal-body .close-btn{
+    display: flex;
+    justify-content: right;
+}
+.modal-body .close-btn .close{
+    padding: 10px 20px;
+    background-color: #E26E70;
+    border-radius: 6px;
+    border: none;
+    color:#fff;
+    font-weight: 600;
+}
+/* phan hover */
+.modal-time:hover{
+    color:red;
+    cursor: pointer;
+}
+.modal-body .close-btn .close:hover{
+    cursor: pointer;
+    color:#E26E70;
+    background-color: red;
+}
+@keyframes showModal{
+from{
+    top:-400px;
+    opacity: 0;
+}
+to{
+    top: 50%;
+    opacity: 1;
+}
+}

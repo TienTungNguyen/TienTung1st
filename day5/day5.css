@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to right, #4daf54, #3d8880);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input-box{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+    margin: auto;
+    transition: all 0.5s linear;
+}
+.input-box .input-modal {
+    width: 100%;
+    height: 100%;
+    background-color: #242628;
+    
+}
+.input-box .input-modal .input{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 100px 20px 30px;
+    color:#fff;
+    outline: none;
+    border: none;
+    font-size: 24px;
+}
+
+.input-box  .search-box{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #242628;
+    background-color: #afafaf;
+    
+}
+.input-box i{
+    width: 30px;
+    width: 30px;
+}
+.input-box.open{
+    width: 420px;
+}
